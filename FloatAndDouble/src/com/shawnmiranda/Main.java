@@ -21,11 +21,9 @@ public class Main {
         //
         // Notes: 1 pound is equal to 0.45359237 kilograms.
 
-        double kilogramToPound = 0.45359237d;
+        double amountPounds = 200d;
+        double convertedKilos = amountPounds * 0.45359237d;
 
-        int amountPounds = 6;
-
-        double totalKilo = amountPounds * kilogramToPound;
-        System.out.println(totalKilo);
+        System.out.println(convertedKilos);
     }
 }
