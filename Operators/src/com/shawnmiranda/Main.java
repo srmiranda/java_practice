@@ -52,8 +52,39 @@ public class Main {
             System.out.println("You got the high score!");
 
         int secondTopScore = 75;
-        if (topScore > secondTopScore && topScore < 100)
+        if ((topScore > secondTopScore) && (topScore < 100))
             System.out.println("Greater than second top score and less than 100");
+
+        if ((topScore > 90) || (secondTopScore <= 90))
+            System.out.println("One of these tests is true");
+
+        int newValue = 50;
+        if (newValue == 50)
+            System.out.println("This is an error");
+
+        boolean isCar = false;
+        boolean wasCar = (isCar) ? true : false;
+        System.out.println(wasCar);
+
+        // 1. Create a double variable with the value of 20.
+        // 2. Create a second double variable with the value of 80.
+        // 3. Add both numbers up and mulitply by 25
+        // 4. Calculate the remainder of the total and 2,300
+        // 5. Write an "if" statement that displays a message
+        // 6. "Total was over the limit" if the remaining total is
+        //     equal to 200 or less
+
+        double firstVar = 20d;
+        double secondVar = 80d;
+        double thirdVar = (firstVar + secondVar) * 25d;
+
+        double total = thirdVar % 2300;
+        if (total <= 200)
+            System.out.println("Total was over the limit");
+
+
+
+
 
     }
 }
